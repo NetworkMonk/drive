@@ -121,7 +121,6 @@ public class WheelPhysicsScript : MonoBehaviour
             else
             {
                 float carSpeed = Vector3.Dot(-carTransform.forward, carRigidBody.velocity) * 2.0f;
-                Debug.Log(carSpeed);
                 float availableTorque = engineScript.GetEngineTorque(Mathf.Abs(carSpeed));
                 carRigidBody.AddForceAtPosition(-forwardDir * availableTorque, transform.position);
             }
