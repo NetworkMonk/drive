@@ -867,6 +867,7 @@ MonoBehaviour:
   wheelMass: 0.2
   driveWheel: 1
   brakeStrength: 0.15
+  decelerationStrength: 0.05
 --- !u!114 &564378998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1403,6 +1404,7 @@ MonoBehaviour:
   wheelMass: 0.2
   driveWheel: 1
   brakeStrength: 0.15
+  decelerationStrength: 0.05
 --- !u!114 &972395882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2137,6 +2139,7 @@ MonoBehaviour:
   wheelMass: 0.2
   driveWheel: 1
   brakeStrength: 0.1
+  decelerationStrength: 0.05
 --- !u!1 &1714005170
 GameObject:
   m_ObjectHideFlags: 0
@@ -2288,6 +2291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1175178027}
+  smooth: 2
 --- !u!1 &1736074793
 GameObject:
   m_ObjectHideFlags: 0
@@ -2344,6 +2348,7 @@ MonoBehaviour:
   wheelMass: 0.2
   driveWheel: 1
   brakeStrength: 0.1
+  decelerationStrength: 0.05
 --- !u!1 &1795135450
 GameObject:
   m_ObjectHideFlags: 0
