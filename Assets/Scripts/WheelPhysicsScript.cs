@@ -66,7 +66,7 @@ public class WheelPhysicsScript : MonoBehaviour
             ApplyDriveForce();
             ApplyBrakeForce();
             ApplyDecelerationForce();
-            ApplyDownhillForce();
+            ApplyDownhillForce(wheelRay);
         }
     }
 
@@ -140,15 +140,17 @@ public class WheelPhysicsScript : MonoBehaviour
         }
     }
 
-    private void ApplyDownhillForce()
+    private void ApplyDownhillForce(RaycastHit wheelRay)
     {
         Vector3 gravity = Physics.gravity;
-        RaycastHit hit;
-        if (Physics.Raycast(transform.position, -transform.up, out hit))
-        {
-            Vector3 groundNormal = hit.normal;
-            Vector3 gravityAlongIncline = Vector3.ProjectOnPlane(gravity, groundNormal);
-            carRigidBody.AddForce(gravityAlongIncline * (carRigidBody.mass / 16.0f));
-        }
+        Vector3 groundNormal = wheelRay.normal;
+        Vector3 gravityAlongIncline = Vector3.ProjectOnPlane(gravity, groundNormal);
+
+        // Calculate the gradient of the hill
+        float gradientAngle = Vector3.Angle(Vector3.up, groundNormal);
+
+        // Compute an exponential factor based on the gradient
+        float exponentialFactor = Mathf.Exp(gradientAngle / 45.0f); // Adjust the divisor to control the rate of increase
+        carRigidBody.AddForce(gravityAlongIncline * (carRigidBody.mass / 16.0f) * exponentialFactor);
     }
 }
