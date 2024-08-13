@@ -78,6 +78,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground_pathCornerSmall
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: acc2f08bd00650b41a20ce55ca8820cc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

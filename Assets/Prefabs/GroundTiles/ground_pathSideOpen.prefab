@@ -78,6 +78,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground_pathSideOpen
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8e997fd36dd05d747ad2f54ef0a894f7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
