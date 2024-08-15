@@ -90,6 +90,7 @@ MonoBehaviour:
   driveWheel: 1
   brakeStrength: 0.1
   decelerationStrength: 0.05
+  gripModifier: 0
 --- !u!1 &4137353388818106825
 GameObject:
   m_ObjectHideFlags: 0
@@ -103,9 +104,10 @@ GameObject:
   - component: {fileID: 3352043196158110009}
   - component: {fileID: 6198668550990383031}
   - component: {fileID: 1038772532115327944}
+  - component: {fileID: 5311408094392018824}
   m_Layer: 0
   m_Name: PlayerCar
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -323,6 +325,18 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   maxSlip: 1
+--- !u!114 &5311408094392018824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4137353388818106825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4022b659df59e4c4a9e297c0f3fa84ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5206486940856304436
 GameObject:
   m_ObjectHideFlags: 0
@@ -381,6 +395,7 @@ MonoBehaviour:
   driveWheel: 1
   brakeStrength: 0.15
   decelerationStrength: 0.05
+  gripModifier: 0
 --- !u!114 &4506533482944961309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -456,6 +471,7 @@ MonoBehaviour:
   driveWheel: 1
   brakeStrength: 0.15
   decelerationStrength: 0.05
+  gripModifier: 0
 --- !u!114 &6024135733174827723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -530,6 +546,7 @@ MonoBehaviour:
   driveWheel: 1
   brakeStrength: 0.1
   decelerationStrength: 0.05
+  gripModifier: 0
 --- !u!1 &7840922918972070875
 GameObject:
   m_ObjectHideFlags: 0

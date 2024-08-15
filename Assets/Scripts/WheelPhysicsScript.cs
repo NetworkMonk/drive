@@ -22,6 +22,7 @@ public class WheelPhysicsScript : MonoBehaviour
 
     public float brakeStrength = 0.25f;
     public float decelerationStrength = 0.05f;
+    public float gripModifier = 0.0f;
 
     private float currentSpringLength;
 
@@ -87,6 +88,10 @@ public class WheelPhysicsScript : MonoBehaviour
         Vector3 wheelWorldVelocity = carRigidBody.GetPointVelocity(transform.position);
         float steeringVel = Vector3.Dot(steeringDir, wheelWorldVelocity);
         float wheelGripFactor = wheelGripCurve.GetGrip(steeringVel);
+        if (gripModifier > 0.0f)
+        {
+            wheelGripFactor = Mathf.Min(wheelGripFactor, gripModifier);
+        }
         float desiredVelChange = -steeringVel * wheelGripFactor;
         float desiredAcceleration = desiredVelChange / Time.fixedDeltaTime;
         carRigidBody.AddForceAtPosition(steeringDir * desiredAcceleration * wheelMass, transform.position);
