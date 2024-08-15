@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - SlippyGround
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
