@@ -7,7 +7,6 @@ public class GripModifier : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("GripModifier script started!");
     }
 
     // Update is called once per frame

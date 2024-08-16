@@ -6,6 +6,7 @@ TagManager:
   tags:
   - SlippyGround
   - Checkpoint
+  - Signpost
   layers:
   - Default
   - TransparentFX
