@@ -5010,12 +5010,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 247794707}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &249077857 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7770819621525829998, guid: d70372e84b39c8346be3c9810f5b720a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1898888159}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &259025075
 GameObject:
   m_ObjectHideFlags: 0
@@ -50953,7 +50947,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 23.126427, y: 0.08, z: 28.613863}
-  m_LocalScale: {x: 1, y: 1.29, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 964410418}
@@ -56748,7 +56742,7 @@ PrefabInstance:
         type: 3}
       propertyPath: currentCheckpoint
       value: 
-      objectReference: {fileID: 249077857}
+      objectReference: {fileID: 0}
     - target: {fileID: 4137353388818106825, guid: d7583e15c757b704fa8a3bd455131112,
         type: 3}
       propertyPath: m_Name
