@@ -68,6 +68,17 @@ public class WheelPhysicsScript : MonoBehaviour
             ApplyBrakeForce();
             ApplyDecelerationForce();
             ApplyDownhillForce(wheelRay);
+
+            Rigidbody hitRigidbody = wheelRay.collider.attachedRigidbody;
+            if (hitRigidbody != null)
+            {
+                // Calculate the force to apply
+                float forceMagnitude = carRigidBody.mass * Physics.gravity.magnitude / 4.0f;
+                Vector3 force = Vector3.down * forceMagnitude;
+
+                // Apply the force at the contact point
+                hitRigidbody.AddForceAtPosition(force, wheelRay.point);
+            }
         }
     }
 

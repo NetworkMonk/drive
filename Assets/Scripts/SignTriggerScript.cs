@@ -11,6 +11,7 @@ public class SignTriggerScript : MonoBehaviour
     private bool isPlayerInside = false;
     private bool isDialogVisible = false;
     private bool isDialogFading = false;
+    private Coroutine fadeCoroutine;
 
     // Start is called before the first frame update
     void Start()
@@ -28,11 +29,15 @@ public class SignTriggerScript : MonoBehaviour
         {
             if (isDialogVisible)
             {
-                StartCoroutine(FadeOutDialog());
+                fadeCoroutine = StartCoroutine(FadeOutDialog());
             }
             else
             {
-                StartCoroutine(FadeInDialog());
+                if (fadeCoroutine != null)
+                {
+                    StopCoroutine(fadeCoroutine);
+                }
+                fadeCoroutine = StartCoroutine(FadeInDialog());
             }
         }
     }
@@ -52,10 +57,11 @@ public class SignTriggerScript : MonoBehaviour
         {
             GetComponentInChildren<SpriteBillBoardScript>().FadeOut();
             isPlayerInside = false;
-            if (isDialogVisible)
+            if (fadeCoroutine != null)
             {
-                StartCoroutine(FadeOutDialog());
+                StopCoroutine(fadeCoroutine);
             }
+            fadeCoroutine = StartCoroutine(FadeOutDialog());
         }
     }
 
@@ -105,11 +111,12 @@ public class SignTriggerScript : MonoBehaviour
 
         float duration = 0.5f;
         float time = 0;
+        float startAlpha = backgroundCanvasGroup.alpha;
 
         while (time < duration)
         {
             time += Time.deltaTime;
-            float alpha = Mathf.Clamp01(1 - (time / duration));
+            float alpha = Mathf.Clamp01(startAlpha - (time / duration));
             backgroundCanvasGroup.alpha = alpha;
             textCanvasGroup.alpha = alpha;
             yield return null;
