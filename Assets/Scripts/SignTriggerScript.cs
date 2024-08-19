@@ -10,6 +10,7 @@ public class SignTriggerScript : MonoBehaviour
 
     private bool isPlayerInside = false;
     private bool isDialogVisible = false;
+    private bool isDialogFading = false;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +24,7 @@ public class SignTriggerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isPlayerInside && Input.GetKeyDown(KeyCode.Space))
+        if (isPlayerInside && Input.GetKeyDown(KeyCode.Space) && !isDialogFading)
         {
             if (isDialogVisible)
             {
@@ -74,6 +75,7 @@ public class SignTriggerScript : MonoBehaviour
 
     private IEnumerator FadeInDialog()
     {
+        isDialogFading = true;
         CanvasGroup backgroundCanvasGroup = dialogBackground.GetComponent<CanvasGroup>();
         CanvasGroup textCanvasGroup = dialogText.GetComponent<CanvasGroup>();
 
@@ -92,10 +94,12 @@ public class SignTriggerScript : MonoBehaviour
         backgroundCanvasGroup.alpha = 1f;
         textCanvasGroup.alpha = 1f;
         isDialogVisible = true;
+        isDialogFading = false;
     }
 
     private IEnumerator FadeOutDialog()
     {
+        isDialogFading = true;
         CanvasGroup backgroundCanvasGroup = dialogBackground.GetComponent<CanvasGroup>();
         CanvasGroup textCanvasGroup = dialogText.GetComponent<CanvasGroup>();
 
@@ -114,5 +118,6 @@ public class SignTriggerScript : MonoBehaviour
         backgroundCanvasGroup.alpha = 0f;
         textCanvasGroup.alpha = 0f;
         isDialogVisible = false;
+        isDialogFading = false;
     }
 }

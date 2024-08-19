@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 3108422658232346055}
   - component: {fileID: 2094094926982046464}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Key-Space
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -129,6 +129,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1791df9a00934b042a5ba438fd61884e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startOpacity: 0
+  updateEveryFrame: 0
+  fadeInDelay: 0
+  fadeOutDelay: 0
 --- !u!1001 &4571511342391516671
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -278,6 +282,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 311db3a27d4266a48bebdf9a82eed204, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogBackground: {fileID: 0}
+  dialogText: {fileID: 0}
 --- !u!4 &4106152721916574228 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7eaabbbda2d0ddf488632bd7516f4f93,
