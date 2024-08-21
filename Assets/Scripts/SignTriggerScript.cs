@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SignTriggerScript : MonoBehaviour
 {
+    private AudioSource audioSource;
 
     public GameObject dialogBackground;
     public GameObject dialogText;
@@ -20,6 +21,8 @@ public class SignTriggerScript : MonoBehaviour
         CanvasGroup textCanvasGroup = dialogText.GetComponent<CanvasGroup>();
         backgroundCanvasGroup.alpha = 0f;
         textCanvasGroup.alpha = 0f;
+        audioSource = GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame
@@ -88,6 +91,11 @@ public class SignTriggerScript : MonoBehaviour
         float duration = 0.5f;
         float time = 0;
 
+        if (audioSource != null)
+        {
+            audioSource.Play();
+        }
+
         while (time < duration)
         {
             time += Time.deltaTime;
@@ -112,6 +120,11 @@ public class SignTriggerScript : MonoBehaviour
         float duration = 0.5f;
         float time = 0;
         float startAlpha = backgroundCanvasGroup.alpha;
+
+        if (audioSource != null)
+        {
+            audioSource.Play();
+        }
 
         while (time < duration)
         {
