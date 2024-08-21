@@ -121,7 +121,7 @@ public class SignTriggerScript : MonoBehaviour
         float time = 0;
         float startAlpha = backgroundCanvasGroup.alpha;
 
-        if (audioSource != null)
+        if (audioSource != null && startAlpha > 0.99f)
         {
             audioSource.Play();
         }
