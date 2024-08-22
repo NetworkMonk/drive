@@ -19,11 +19,11 @@ public class CameraController : MonoBehaviour
     {
         if (smoothing)
         {
-            transform.position = Vector3.Lerp(transform.position, new Vector3(target.position.x - 3.0f, target.position.y + 5.0f, target.position.z - 5.0f), Time.deltaTime * smooth);
+            transform.position = Vector3.Lerp(transform.position, new Vector3(target.position.x - 12.6f, target.position.y + 20.0f, target.position.z - 22.5f), Time.deltaTime * smooth);
         }
         else
         {
-            transform.position = new Vector3(target.position.x - 3.0f, target.position.y + 5.0f, target.position.z - 5.0f);
+            transform.position = new Vector3(target.position.x - 12.6f, target.position.y + 20.0f, target.position.z - 22.5f);
         }
     }
 }
