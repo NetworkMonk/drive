@@ -6879,7 +6879,7 @@ GameObject:
   - component: {fileID: 270464641}
   - component: {fileID: 270464644}
   - component: {fileID: 270464643}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: SECRET-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49362,7 +49362,7 @@ GameObject:
   - component: {fileID: 1516717687}
   - component: {fileID: 1516717690}
   - component: {fileID: 1516717689}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: SECRET-2
   m_TagString: Secret
   m_Icon: {fileID: 0}
