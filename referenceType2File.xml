@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTypeDate xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TypeDate>
+    <guid>85289bea9dabe114db41fe8f143771c9</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/AssetCollector.cs</fileName>
+    <timeStamp>2024-08-23T21:31:29.0728249+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e0764b8afd925f446af1da05926ac310</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/AssetReferenceCollection.cs</fileName>
+    <timeStamp>2024-08-23T21:31:29.0913826+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>41930dbd59811fe45be9e5c2b8036db0</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/ClassReferenceCollection.cs</fileName>
+    <timeStamp>2024-08-23T21:31:29.1064129+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7a24717ef879b5046b822290975d7e47</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/CollectionData.cs</fileName>
+    <timeStamp>2024-08-23T21:31:29.1214661+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>03df3c82c80eba24fa55a6e32d3786b8</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/FindUnusedAssetsWindow.cs</fileName>
+    <timeStamp>2024-08-23T21:31:29.1365123+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>06d78a26e1e2a2d47b68c517bc4fc289</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/ShaderReferenceCollection.cs</fileName>
+    <timeStamp>2024-08-23T21:31:29.1510624+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>88705b5d9faa43349b76fa15a5092603</guid>
+    <fileName>Assets/Scripts/CameraController.cs</fileName>
+    <timeStamp>2024-08-22T22:01:36.3293612+01:00</timeStamp>
+    <typeFullName>
+      <string>CameraController</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>721bee8db54766d47aa6db970c79d6d6</guid>
+    <fileName>Assets/Scripts/CheckpointConfettiController.cs</fileName>
+    <timeStamp>2024-08-21T21:10:41.5502201+01:00</timeStamp>
+    <typeFullName>
+      <string>CheckpointConfettiController</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>846791b5366380c47be7800a606c21e5</guid>
+    <fileName>Assets/Scripts/CheckpointController.cs</fileName>
+    <timeStamp>2024-08-23T13:42:46.847614+01:00</timeStamp>
+    <typeFullName>
+      <string>CheckpointController</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>ab4e2df0c3a9fb2469f6ea91855fde05</guid>
+    <fileName>Assets/Scripts/CollisionSoundEffect.cs</fileName>
+    <timeStamp>2024-08-16T23:02:20.6822972+01:00</timeStamp>
+    <typeFullName>
+      <string>CollisionSoundEffect</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>10505de91cd3eab4db0dd8847cb6c59a</guid>
+    <fileName>Assets/Scripts/EngineScript.cs</fileName>
+    <timeStamp>2024-08-16T22:53:07.5195592+01:00</timeStamp>
+    <typeFullName>
+      <string>EngineScript</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>4022b659df59e4c4a9e297c0f3fa84ad</guid>
+    <fileName>Assets/Scripts/GripModifier.cs</fileName>
+    <timeStamp>2024-08-16T21:53:37.9205671+01:00</timeStamp>
+    <typeFullName>
+      <string>GripModifier</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>ad8594ca5f5c37f479e6724ac788f7f3</guid>
+    <fileName>Assets/Scripts/SecretController.cs</fileName>
+    <timeStamp>2024-08-23T17:23:29.1158544+01:00</timeStamp>
+    <typeFullName>
+      <string>SecretController</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>311db3a27d4266a48bebdf9a82eed204</guid>
+    <fileName>Assets/Scripts/SignTriggerScript.cs</fileName>
+    <timeStamp>2024-08-23T13:49:44.411216+01:00</timeStamp>
+    <typeFullName>
+      <string>SignTriggerScript</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>1791df9a00934b042a5ba438fd61884e</guid>
+    <fileName>Assets/Scripts/SpriteBillBoardScript.cs</fileName>
+    <timeStamp>2024-08-19T17:24:02.2107989+01:00</timeStamp>
+    <typeFullName>
+      <string>SpriteBillBoardScript</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>ca5c91f9000e1c641a8f562397169249</guid>
+    <fileName>Assets/Scripts/StatsController.cs</fileName>
+    <timeStamp>2024-08-23T13:52:23.1204244+01:00</timeStamp>
+    <typeFullName>
+      <string>StatsController</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>32ebe824e3037e545a98d557b7b18b98</guid>
+    <fileName>Assets/Scripts/SteeringCurve.cs</fileName>
+    <timeStamp>2024-08-13T08:39:22.7243991+01:00</timeStamp>
+    <typeFullName>
+      <string>SteeringCurve</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>0f2294b2d37a08f4b9db26a6ba63f96e</guid>
+    <fileName>Assets/Scripts/WheelGripCurve.cs</fileName>
+    <timeStamp>2024-08-12T22:47:49.8917854+01:00</timeStamp>
+    <typeFullName>
+      <string>WheelGripCurve</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>1fca16fb50507bc46a927f7dd253c82c</guid>
+    <fileName>Assets/Scripts/WheelPhysicsScript.cs</fileName>
+    <timeStamp>2024-08-19T22:15:23.242369+01:00</timeStamp>
+    <typeFullName>
+      <string>WheelPhysicsScript</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f1f3dd097b5c6964eaa3fe33bfded176</guid>
+    <fileName>Assets/Scripts/WheelSteeringScript.cs</fileName>
+    <timeStamp>2024-08-13T08:37:29.2486396+01:00</timeStamp>
+    <typeFullName>
+      <string>WheelSteeringScript</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>fcf7219bab7fe46a1ad266029b2fee19</guid>
+    <fileName>Assets/TutorialInfo/Scripts/Readme.cs</fileName>
+    <timeStamp>2024-03-26T11:57:31+00:00</timeStamp>
+    <typeFullName>
+      <string>Readme</string>
+      <string>Readme+Section</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>476cc7d7cd9874016adc216baab94a0a</guid>
+    <fileName>Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs</fileName>
+    <timeStamp>2024-03-26T11:57:31+00:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+</ArrayOfTypeDate>
