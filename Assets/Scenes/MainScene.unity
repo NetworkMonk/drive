@@ -6877,6 +6877,8 @@ GameObject:
   - component: {fileID: 270464640}
   - component: {fileID: 270464642}
   - component: {fileID: 270464641}
+  - component: {fileID: 270464644}
+  - component: {fileID: 270464643}
   m_Layer: 0
   m_Name: SECRET-1
   m_TagString: Untagged
@@ -7038,6 +7040,39 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &270464643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270464639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad8594ca5f5c37f479e6724ac788f7f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &270464644
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270464639}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 5.53
+  m_Center: {x: -3.6977706, y: 0.54834336, z: 0}
 --- !u!4 &274534666 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8235694083646182594, guid: 536ae87d67aa2b94bade5e50dbb2c9f7,
@@ -22757,7 +22792,7 @@ GameObject:
   - component: {fileID: 764602717}
   - component: {fileID: 764602716}
   m_Layer: 0
-  m_Name: Stats-Secrets (1)
+  m_Name: Stats-Secrets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39684,6 +39719,30 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ceefff9cdd88904a84c011bf257784b, type: 3}
+--- !u!1 &1194934189 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4137353388818106825, guid: d7583e15c757b704fa8a3bd455131112,
+    type: 3}
+  m_PrefabInstance: {fileID: 8372087980795092359}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1194934198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194934189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca5c91f9000e1c641a8f562397169249, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 453189575}
+  resetText: {fileID: 594229542}
+  signsText: {fileID: 174425031}
+  secretsText: {fileID: 764602716}
+  signsMax: 8
+  secretsMax: 2
 --- !u!1001 &1197178734
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48308,6 +48367,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1484737415}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1487040268 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7770819621525829998, guid: d70372e84b39c8346be3c9810f5b720a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1229176083}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1487537663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49301,9 +49366,11 @@ GameObject:
   - component: {fileID: 1516717686}
   - component: {fileID: 1516717688}
   - component: {fileID: 1516717687}
+  - component: {fileID: 1516717690}
+  - component: {fileID: 1516717689}
   m_Layer: 0
   m_Name: SECRET-2
-  m_TagString: Untagged
+  m_TagString: Secret
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49462,6 +49529,39 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1516717689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516717685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad8594ca5f5c37f479e6724ac788f7f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &1516717690
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516717685}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 5.46
+  m_Center: {x: -3.6977649, y: 0.54834336, z: 0}
 --- !u!1001 &1518649817
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55302,6 +55402,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d4a70328e3ebba42a30bbe68fae92a3, type: 3}
+--- !u!1 &1715910735 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7770819621525829998, guid: d70372e84b39c8346be3c9810f5b720a,
+    type: 3}
+  m_PrefabInstance: {fileID: 166483749}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1717706260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71173,6 +71279,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1692672286114807000, guid: d7583e15c757b704fa8a3bd455131112,
+        type: 3}
+      propertyPath: finalCheckpoint
+      value: 
+      objectReference: {fileID: 1715910735}
+    - target: {fileID: 1692672286114807000, guid: d7583e15c757b704fa8a3bd455131112,
+        type: 3}
+      propertyPath: currentCheckpoint
+      value: 
+      objectReference: {fileID: 1487040268}
     - target: {fileID: 4137353388818106825, guid: d7583e15c757b704fa8a3bd455131112,
         type: 3}
       propertyPath: m_Name
@@ -71181,7 +71297,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4137353388818106825, guid: d7583e15c757b704fa8a3bd455131112,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1194934198}
   m_SourcePrefab: {fileID: 100100000, guid: d7583e15c757b704fa8a3bd455131112, type: 3}
 --- !u!1001 &8447227040387350019
 PrefabInstance:

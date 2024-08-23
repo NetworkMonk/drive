@@ -6,12 +6,15 @@ using UnityEngine;
 public class CheckpointController : MonoBehaviour
 {
     public GameObject currentCheckpoint;
+    public GameObject finalCheckpoint;
     private Rigidbody rb;
+    private StatsController statsController;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        statsController = GetComponent<StatsController>();
     }
 
     // Update is called once per frame
@@ -34,6 +37,10 @@ public class CheckpointController : MonoBehaviour
                 rb.velocity = Vector3.zero;
                 rb.angularVelocity = Vector3.zero;
             }
+            if (statsController != null)
+            {
+                statsController.IncrementResetCount(); // Call the incrementResetCount method
+            }
         }
     }
 
@@ -45,8 +52,13 @@ public class CheckpointController : MonoBehaviour
             {
                 return;
             }
-            
+
             currentCheckpoint = other.gameObject;
+            if (currentCheckpoint == finalCheckpoint)
+            {
+                statsController.StopTimer(); // Call the StopTimer method
+            }
+            
             // Get the CheckpointConfettiController component and call RestartAllParticleSystems
             CheckpointConfettiController confettiController = currentCheckpoint.GetComponent<CheckpointConfettiController>();
             if (confettiController != null)

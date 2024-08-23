@@ -14,6 +14,10 @@ public class SignTriggerScript : MonoBehaviour
     private bool isDialogFading = false;
     private Coroutine fadeCoroutine;
 
+    private bool firstTrigger = true;
+
+    private GameObject player;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +26,7 @@ public class SignTriggerScript : MonoBehaviour
         backgroundCanvasGroup.alpha = 0f;
         textCanvasGroup.alpha = 0f;
         audioSource = GetComponent<AudioSource>();
-
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
@@ -85,6 +89,11 @@ public class SignTriggerScript : MonoBehaviour
     private IEnumerator FadeInDialog()
     {
         isDialogFading = true;
+        if (firstTrigger)
+        {
+            firstTrigger = false;
+            player.GetComponent<StatsController>().IncrementSignsCount();
+        }
         CanvasGroup backgroundCanvasGroup = dialogBackground.GetComponent<CanvasGroup>();
         CanvasGroup textCanvasGroup = dialogText.GetComponent<CanvasGroup>();
 
