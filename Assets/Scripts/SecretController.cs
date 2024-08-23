@@ -20,21 +20,14 @@ public class SecretController : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Triggered");
-        Debug.Log(other.tag);
         Transform playerParent = GetTaggedParent(other.transform, "Player");
         if (!hasTriggered && playerParent != null)
         {
-            Debug.Log("Player triggered");
             StatsController statsController = playerParent.gameObject.GetComponent<StatsController>();
             if (statsController != null)
             {
                 statsController.IncrementSecretsCount();
                 hasTriggered = true;
-            }
-            else
-            {
-                Debug.Log("StatsController not found");
             }
         }
     }
