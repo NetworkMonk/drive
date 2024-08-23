@@ -22,29 +22,34 @@ public class SecretController : MonoBehaviour
     {
         Debug.Log("Triggered");
         Debug.Log(other.tag);
-        if (!hasTriggered && IsChildOfTaggedParent(other.transform, "Player"))
+        Transform playerParent = GetTaggedParent(other.transform, "Player");
+        if (!hasTriggered && playerParent != null)
         {
             Debug.Log("Player triggered");
-            StatsController statsController = other.gameObject.GetComponent<StatsController>();
+            StatsController statsController = playerParent.gameObject.GetComponent<StatsController>();
             if (statsController != null)
             {
                 statsController.IncrementSecretsCount();
                 hasTriggered = true;
             }
+            else
+            {
+                Debug.Log("StatsController not found");
+            }
         }
     }
 
-    private bool IsChildOfTaggedParent(Transform child, string tag)
+    private Transform GetTaggedParent(Transform child, string tag)
     {
         Transform current = child;
         while (current != null)
         {
             if (current.CompareTag(tag))
             {
-                return true;
+                return current;
             }
             current = current.parent;
         }
-        return false;
+        return null;
     }
 }
