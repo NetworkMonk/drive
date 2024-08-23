@@ -48367,12 +48367,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1484737415}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1487040268 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7770819621525829998, guid: d70372e84b39c8346be3c9810f5b720a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1229176083}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1487537663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71288,7 +71282,7 @@ PrefabInstance:
         type: 3}
       propertyPath: currentCheckpoint
       value: 
-      objectReference: {fileID: 1487040268}
+      objectReference: {fileID: 0}
     - target: {fileID: 4137353388818106825, guid: d7583e15c757b704fa8a3bd455131112,
         type: 3}
       propertyPath: m_Name
