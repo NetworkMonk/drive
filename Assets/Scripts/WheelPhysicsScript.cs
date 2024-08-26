@@ -26,6 +26,9 @@ public class WheelPhysicsScript : MonoBehaviour
 
     private float currentSpringLength;
 
+    public bool touchAccelerate = false;
+    public bool touchBrake = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -110,7 +113,7 @@ public class WheelPhysicsScript : MonoBehaviour
 
     private void ApplyDriveForce()
     {
-        if (driveWheel && Input.GetKey(KeyCode.UpArrow))
+        if (driveWheel && (Input.GetKey(KeyCode.UpArrow) || touchAccelerate))
         {
             Vector3 accelerationDir = transform.forward;
             float carSpeed = Vector3.Dot(carTransform.forward, carRigidBody.velocity);
@@ -121,7 +124,7 @@ public class WheelPhysicsScript : MonoBehaviour
 
     private void ApplyBrakeForce()
     {
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.DownArrow) || touchBrake)
         {
             Vector3 forwardDir = transform.forward;
             Vector3 wheelWorldVelocity = carRigidBody.GetPointVelocity(transform.position);
@@ -145,7 +148,7 @@ public class WheelPhysicsScript : MonoBehaviour
 
     private void ApplyDecelerationForce()
     {
-        if (!Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow))
+        if (!Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow) && !touchAccelerate && !touchBrake)
         {
             Vector3 forwardDir = transform.forward;
             Vector3 wheelWorldVelocity = carRigidBody.GetPointVelocity(transform.position);

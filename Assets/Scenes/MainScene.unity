@@ -19041,6 +19041,7 @@ GameObject:
   - component: {fileID: 656108524}
   - component: {fileID: 656108526}
   - component: {fileID: 656108525}
+  - component: {fileID: 656108527}
   m_Layer: 5
   m_Name: Touch-Left
   m_TagString: Untagged
@@ -19105,6 +19106,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 656108523}
   m_CullTransparentMesh: 1
+--- !u!114 &656108527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656108523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f8c370758d6e84caba5e515307c092, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &660144775
 GameObject:
   m_ObjectHideFlags: 0
@@ -61739,6 +61752,7 @@ GameObject:
   - component: {fileID: 1904923294}
   - component: {fileID: 1904923296}
   - component: {fileID: 1904923295}
+  - component: {fileID: 1904923297}
   m_Layer: 5
   m_Name: Touch-Right
   m_TagString: Untagged
@@ -61803,6 +61817,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1904923293}
   m_CullTransparentMesh: 1
+--- !u!114 &1904923297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904923293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6560825e3a8f2b14c95dec6eaffe9496, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1908201870 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1762846085471871065, guid: 46d42c1e0e895fd4894f84acb45bf5c8,
@@ -65066,6 +65092,7 @@ GameObject:
   - component: {fileID: 2006481418}
   - component: {fileID: 2006481420}
   - component: {fileID: 2006481419}
+  - component: {fileID: 2006481421}
   m_Layer: 5
   m_Name: Touch-Up
   m_TagString: Untagged
@@ -65130,6 +65157,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2006481417}
   m_CullTransparentMesh: 1
+--- !u!114 &2006481421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006481417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e419a2fa4ca1fbb4ba90087a654a1d83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2007481451
 GameObject:
   m_ObjectHideFlags: 0
@@ -68387,6 +68426,7 @@ GameObject:
   - component: {fileID: 2124261126}
   - component: {fileID: 2124261128}
   - component: {fileID: 2124261127}
+  - component: {fileID: 2124261129}
   m_Layer: 5
   m_Name: Touch-Down
   m_TagString: Untagged
@@ -68451,6 +68491,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2124261125}
   m_CullTransparentMesh: 1
+--- !u!114 &2124261129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124261125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69236c67b02abbe40bea3ab14e3aeeee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2125639556
 PrefabInstance:
   m_ObjectHideFlags: 0

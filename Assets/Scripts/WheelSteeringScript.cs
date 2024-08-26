@@ -12,6 +12,9 @@ public class WheelSteeringScript : MonoBehaviour
     public float maxSteeringAngle = 50.0f;
     public float smooth = 20.0f;
 
+    public bool touchLeft = false;
+    public bool touchRight = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,11 +27,11 @@ public class WheelSteeringScript : MonoBehaviour
         float carSpeed = Vector3.Dot(carTransform.forward, carRigidBody.velocity);
         float maxSteeringAmount = steeringCurve.GetSteeringAmount(carSpeed);
         float desiredSteering = 0.0f;
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow) || touchLeft)
         {
             desiredSteering -= maxSteeringAngle * maxSteeringAmount;
         }
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow) || touchRight)
         {
             desiredSteering += maxSteeringAngle * maxSteeringAmount;
         }
