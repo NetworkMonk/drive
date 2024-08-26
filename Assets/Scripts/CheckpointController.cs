@@ -22,25 +22,7 @@ public class CheckpointController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            if (currentCheckpoint)
-            {
-                transform.position = currentCheckpoint.transform.position + (Vector3.up * 0.5f);
-                transform.rotation = currentCheckpoint.transform.rotation;
-            }
-            else
-            {
-                transform.position = Vector3.up * 0.5f;
-                transform.eulerAngles = Vector3.zero;
-            }
-            if (rb != null)
-            {
-                rb.velocity = Vector3.zero;
-                rb.angularVelocity = Vector3.zero;
-            }
-            if (statsController != null)
-            {
-                statsController.IncrementResetCount(); // Call the incrementResetCount method
-            }
+            ResetPlayer();
         }
     }
 
@@ -58,13 +40,36 @@ public class CheckpointController : MonoBehaviour
             {
                 statsController.StopTimer(); // Call the StopTimer method
             }
-            
+
             // Get the CheckpointConfettiController component and call RestartAllParticleSystems
             CheckpointConfettiController confettiController = currentCheckpoint.GetComponent<CheckpointConfettiController>();
             if (confettiController != null)
             {
                 confettiController.RestartAllParticleSystems();
             }
+        }
+    }
+
+    public void ResetPlayer()
+    {
+        if (currentCheckpoint)
+        {
+            transform.position = currentCheckpoint.transform.position + (Vector3.up * 0.5f);
+            transform.rotation = currentCheckpoint.transform.rotation;
+        }
+        else
+        {
+            transform.position = Vector3.up * 0.5f;
+            transform.eulerAngles = Vector3.zero;
+        }
+        if (rb != null)
+        {
+            rb.velocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+        }
+        if (statsController != null)
+        {
+            statsController.IncrementResetCount(); // Call the incrementResetCount method
         }
     }
 }

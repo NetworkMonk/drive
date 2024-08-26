@@ -30,7 +30,7 @@ public class EngineScript : MonoBehaviour
     {
         currentSpeed = GetComponent<Rigidbody>().velocity.magnitude;
         float normalizedSpeed = currentSpeed / maxSpeed;
-        targetVolume = Mathf.Max(Mathf.Clamp01(normalizedSpeed * 0.4f), 0.2f);
+        targetVolume = Mathf.Max(Mathf.Clamp01(normalizedSpeed * 0.45f), 0.2f);
         float targetPitch = Mathf.Lerp(0.4f, 1.25f, normalizedSpeed);
 
         // Smoothly interpolate volume and pitch

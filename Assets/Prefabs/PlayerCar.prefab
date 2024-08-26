@@ -202,6 +202,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2534614220564126475}
   - component: {fileID: 7020359096328167258}
+  - component: {fileID: 2005527425928306577}
   m_Layer: 0
   m_Name: DriveKeys
   m_TagString: Untagged
@@ -244,6 +245,14 @@ MonoBehaviour:
   updateEveryFrame: 1
   fadeInDelay: 0
   fadeOutDelay: 0
+--- !u!81 &2005527425928306577
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4041790497962478090}
+  m_Enabled: 1
 --- !u!1 &4137353388818106825
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,8 +268,8 @@ GameObject:
   - component: {fileID: 1038772532115327944}
   - component: {fileID: 5311408094392018824}
   - component: {fileID: 1692672286114807000}
-  - component: {fileID: 152815504813490011}
   - component: {fileID: 5862012223698739962}
+  - component: {fileID: 2098815908940567750}
   m_Layer: 0
   m_Name: PlayerCar
   m_TagString: Player
@@ -508,14 +517,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentCheckpoint: {fileID: 0}
---- !u!81 &152815504813490011
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4137353388818106825}
-  m_Enabled: 1
+  finalCheckpoint: {fileID: 0}
+  resetTouchButton: {fileID: 0}
 --- !u!114 &5862012223698739962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -529,6 +532,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collisionSoundClip: {fileID: 8300000, guid: fc2de82bde55e1c409a8e03ffc87bfdc, type: 3}
+--- !u!114 &2098815908940567750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4137353388818106825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca5c91f9000e1c641a8f562397169249, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 0}
+  resetText: {fileID: 0}
+  signsText: {fileID: 0}
+  secretsText: {fileID: 0}
+  signsMax: 8
+  secretsMax: 2
 --- !u!1 &5206486940856304436
 GameObject:
   m_ObjectHideFlags: 0
