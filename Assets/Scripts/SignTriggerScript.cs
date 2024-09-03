@@ -149,4 +149,24 @@ public class SignTriggerScript : MonoBehaviour
         isDialogVisible = false;
         isDialogFading = false;
     }
+
+    public void TouchTriggered()
+    {
+        if (isPlayerInside && !isDialogFading)
+        {
+            if (isDialogVisible)
+            {
+                fadeCoroutine = StartCoroutine(FadeOutDialog());
+            }
+            else
+            {
+                if (fadeCoroutine != null)
+                {
+                    StopCoroutine(fadeCoroutine);
+                }
+                fadeCoroutine = StartCoroutine(FadeInDialog());
+            }
+        }
+
+    }
 }
